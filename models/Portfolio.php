@@ -13,7 +13,7 @@ $projetos = [
     2 => [
         'nome' => 'SISTCC',
         'imagens' => ['sistcc_1.png', 'sistcc_2.png', 'sistcc_3.png'],
-        'tecnologias' => ['HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Bootstrap', 'Dompdf', 'Jira', 'BR Modelo', 'Livewire', 'Jquery'],
+        'tecnologias' => ['HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Bootstrap', 'Dompdf', 'Jira', 'BR Modelo', 'Livewire', 'Breeze', 'Jquery'],
         'descricao' => 'Sistema de Trabalho de Conclusão de Curso. Acesse o <a target="_blank" href="../assets/pdf/sistcc_manual.pdf">manual</a> para mais informações.',
         'github' => null,
         'servidor' => null,
@@ -33,7 +33,7 @@ $projetos = [
         'imagens' => ['crud-produtos_1.png', 'crud-produtos_2.png', 'crud-produtos_3.png'],
         'tecnologias' => ['HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Bootstrap'],
         'descricao' => 'Sistema de gerenciamento de produtos. Este é um sistema simples de cadastro, edição, exclusão e exibição de produtos.',
-        'github' => '',
+        'github' => 'https://github.com/Yslandio/crud-produtos',
         'servidor' => null,
         'pdf' => null
     ]
