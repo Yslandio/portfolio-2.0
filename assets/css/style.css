@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+body {
+    /* background-image: linear-gradient(to left, #474240, #524B49, #3B3B3B, #52494E, #474047); */
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.80), rgba(255, 166, 0, 0.80), rgba(255, 0, 0, 0.80));
+    background-size: 500% 100%;
+    animation: degrade-background 10s infinite alternate;
+}
+
+@keyframes degrade-background {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(44, 44, 44);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(99, 99, 99);
+    border-radius: 20px;
+    border: 3px solid rgb(44, 44, 44);
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    font-weight: lighter;
+}
+
+.box {
+    background-color: rgba(255,255,255, 0.6);
+}
