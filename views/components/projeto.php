@@ -22,15 +22,15 @@ if (!isset($_GET['id']) || !in_array($_GET['id'], [1, 2, 3, 4])) {
             <div class="carousel-inner">
                 <!-- Imagem 1 do sistema -->
                 <div class="carousel-item active">
-                    <img src="../../assets/img/<?= $projetos[$_GET['id']]['imagens'][0]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
+                    <img src="../assets/img/<?= $projetos[$_GET['id']]['imagens'][0]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
                 </div>
                 <!-- Imagem 2 do sistema -->
                 <div class="carousel-item">
-                    <img src="../../assets/img/<?= $projetos[$_GET['id']]['imagens'][1]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
+                    <img src="../assets/img/<?= $projetos[$_GET['id']]['imagens'][1]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
                 </div>
                 <!-- Imagem 3 do sistema -->
                 <div class="carousel-item">
-                    <img src="../../assets/img/<?= $projetos[$_GET['id']]['imagens'][3]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
+                    <img src="../assets/img/<?= $projetos[$_GET['id']]['imagens'][3]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"

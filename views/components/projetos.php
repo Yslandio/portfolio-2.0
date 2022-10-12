@@ -9,7 +9,7 @@
         <div class="box border border-2 border-dark rounded shadow-lg p-3">
             <div class="d-flex flex-wrap gap-4 rounded-2">
                 <div class="project-img w-100">
-                    <img src="../../assets/img/<?= $projeto['imagens'][1]; ?>"
+                    <img src="../assets/img/<?= $projeto['imagens'][1]; ?>"
                         class="d-block w-100 border border-1 border-dark"
                         alt="Imagem do projeto <?= $key ?>">
                 </div>
