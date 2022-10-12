@@ -9,7 +9,7 @@ if (!isset($_GET['id']) || !in_array($_GET['id'], [1, 2, 3, 4])) {
 ?>
 
 <section class="d-flex flex-wrap gap-4 justify-content-center p-3">
-    <div class="box border border-2 border-dark rounded shadow-lg p-3 w-100">
+    <div class="box border border-2 border-dark rounded shadow-lg p-3 w-100 d-flex flex-wrap justify-content-center gap-4">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -19,19 +19,12 @@ if (!isset($_GET['id']) || !in_array($_GET['id'], [1, 2, 3, 4])) {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-                <!-- Imagem 1 do sistema -->
-                <div class="carousel-item active">
-                    <img src="../assets/img/<?= $projetos[$_GET['id']]['imagens'][0]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
-                </div>
-                <!-- Imagem 2 do sistema -->
-                <div class="carousel-item">
-                    <img src="../assets/img/<?= $projetos[$_GET['id']]['imagens'][1]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
-                </div>
-                <!-- Imagem 3 do sistema -->
-                <div class="carousel-item">
-                    <img src="../assets/img/<?= $projetos[$_GET['id']]['imagens'][3]; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem 1 do sistema">
-                </div>
+            <div class="carousel-inner rounded shadow-sm" style="max-width: 100vh !important; max-height: 50vh !important;">
+                <?php foreach ($projetos[$_GET['id']]['imagens'] as $key => $projeto) { ?>
+                    <div class="carousel-item <?php if($key == 0) echo 'active' ?>">
+                        <img src="../assets/img/<?= $projeto; ?>" class="d-block w-100 border border-1 border-dark" alt="Imagem <?= $key + 1 ?> do sistema">
+                    </div>
+                <?php } ?>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
@@ -44,15 +37,15 @@ if (!isset($_GET['id']) || !in_array($_GET['id'], [1, 2, 3, 4])) {
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="d-flex flex-wrap justify-content-between align-items-center mt-3 gap-2 w-100">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 w-100 p-3">
             <h4 class="text-black fw-bold shadow-sm p-2 m-0"><?= $projetos[$_GET['id']]['nome']; ?></h4>
             <div class="d-flex flex-wrap justify-content-between gap-2">
-                <a class="btn btn-outline-dark fw-bold <?php if($projetos[$_GET['id']]['github'] == null) 'disabled'; ?>" href="<?= $projetos[$_GET['id']]['github']; ?>" target="_blank">GitHub</a>
-                <a class="btn btn-outline-dark fw-bold <?php if($projetos[$_GET['id']]['servidor'] == null) 'disabled'; ?>" href="<?= $projetos[$_GET['id']]['servidor']; ?>" target="_blank">Acessar</a>
+                <a class="btn btn-outline-dark fw-bold <?php if($projetos[$_GET['id']]['github'] == null) echo 'disabled'; ?>" href="<?= $projetos[$_GET['id']]['github']; ?>" target="_blank">GitHub</a>
+                <a class="btn btn-outline-dark fw-bold <?php if($projetos[$_GET['id']]['servidor'] == null) echo 'disabled'; ?>" href="<?= $projetos[$_GET['id']]['servidor']; ?>" target="_blank">Acessar</a>
             </div>
         </div>
 
-        <div class="d-flex flex-wrap gap-4 justify-content-center p-3">
+        <div class="d-flex flex-wrap gap-4 justify-content-center p-3 w-100">
             <div class="box border border-1 border-dark rounded shadow-sm p-3 w-100">
                 <div>
                     <h4 class="text-black fw-bold mb-2">Tecnologias</h4>

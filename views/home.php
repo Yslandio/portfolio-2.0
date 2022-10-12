@@ -7,7 +7,7 @@
     <title>Portfólio</title>
 
     <!-- Favincon -->
-    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"> -->
 
     <!-- Bootstrap - CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 

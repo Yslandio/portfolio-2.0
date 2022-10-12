@@ -7,11 +7,10 @@
 
     <?php foreach ($projetos as $key => $projeto) { ?>
         <div class="box border border-2 border-dark rounded shadow-lg p-3">
-            <div class="d-flex flex-wrap gap-4 rounded-2">
-                <div class="project-img w-100">
-                    <img src="../assets/img/<?= $projeto['imagens'][1]; ?>"
-                        class="d-block w-100 border border-1 border-dark"
-                        alt="Imagem do projeto <?= $key ?>">
+            <div class="d-flex flex-wrap gap-4 rounded-2" style="max-width: 400px !important;">
+                <div class="w-100">
+                    <img style="max-width: 400px !important; max-height: 200px !important;" src="../assets/img/<?= $projeto['imagens'][0]; ?>"
+                        class="d-block w-100 border border-1 shadow-sm border-dark rounded" alt="Imagem do projeto <?= $key ?>">
                 </div>
                 <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 w-100">
                     <h5 class="text-black fw-bold shadow-sm p-2"><?= $projeto['nome']; ?></h5>
